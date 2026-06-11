@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">nature</button>
+    <button onclick="filterImages('cars')">cars</button>
+</div>
+
+    <div class="gallery">
+        <img src="image 1.jpg" alt="Image 1" class="nature">
+        <img src="image 2.jpg" alt="Image 2" class="cars">
+        <img src="image 3.jpg" alt="Image 3" class="nature">
+        <img src="image 4.jpg" alt="Image 4" class="cars">
+        <img src="image 5.jpg" alt="Image 5" class="nature">
+        <img src="image 6.jpg" alt="Image 6" class="cars">
+    </div>
+<div class="modal" id="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
